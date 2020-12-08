@@ -1,0 +1,4 @@
+C:\Users\dns\Desktop\учеба\Алгоритмы и структуры данных\Новая папка\BinaryTree\Debug\BinaryTree.exe
+C:\Users\dns\Desktop\учеба\Алгоритмы и структуры данных\Новая папка\BinaryTree\Debug\BinaryTree.pdb
+C:\Users\dns\Desktop\учеба\Алгоритмы и структуры данных\BinaryTree\BinaryTree\Debug\BinaryTree.exe
+C:\Users\dns\Desktop\учеба\Алгоритмы и структуры данных\BinaryTree\BinaryTree\Debug\BinaryTree.pdb
