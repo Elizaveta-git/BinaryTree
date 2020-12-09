@@ -20,15 +20,20 @@ private:
 		}
 	};
 	Node* head;//pointer to the end of the list
+	size_t Size;
 
 public:
 	Queue()
 	{
+		Size = 0;
 		head = NULL;//zeroing head element
 	}
 	~Queue()
 	{
-
+		while (Size)
+		{
+			pop_front();
+		}
 	}
 	void push(type data)
 	{
@@ -62,5 +67,27 @@ public:
 	type top()
 	{
 		return head->data;
+	}
+	size_t get_size()//getting list size
+	{
+		if (isEmpty() == 1)
+		{
+			throw out_of_range("The list is empty");
+		}
+		else return Size;
+	}
+	void pop_front()//remove an element from the beginning of the list
+	{
+		if (isEmpty() == 1)
+		{
+			throw out_of_range("The list is empty");
+		}
+		else
+		{
+			Node* current = head;//remember the first element
+			head = head->Next;//make the second element first
+			delete current;//delete first element
+			Size--;//reduce list size
+		}
 	}
 };
